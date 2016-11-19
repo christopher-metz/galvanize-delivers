@@ -1,0 +1,11 @@
+header {
+  background-image: url(../img/hero.jpg);
+  background-size: cover;
+  flex-direction: column;
+  height: 450px;
+  justify-content: center;
+}
+
+i {
+  vertical-align: bottom;
+}
