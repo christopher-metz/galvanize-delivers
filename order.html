@@ -32,7 +32,7 @@
 
     <main class="row">
       <div class="container">
-        <div class="col s12 m7 row"><h5>Menu</h5>
+        <div class="cards col s12 m7 row"><h5>Menu</h5>
 
           <div class="col s12 m12 l6">
 
@@ -120,23 +120,21 @@
               </thead>
 
               <tbody>
-                <tr>
-                  <td>Royale w/Cheese</td>
-                  <td class="price right-align">$8.99</td>
-                </tr>
-                <!-- <tr>
-                  <td>Arugula Pie</td>
-                  <td class="price right-align">$23.89</td>
-                </tr>
-                <tr>
-                  <td>Ice Cream Biscut</td>
-                  <td class="price right-align">$4.99</td>
-                </tr>
-                <tr>
-                  <td>Smoked Swine</td>
-                  <td class="price right-align">$17.99</td>
-                </tr> -->
               </tbody>
+              <tfoot>
+                <tr>
+                  <td class="center">Subtotal</td>
+                  <td class="subtotal right-align">$0.00</td>
+                </tr>
+                <tr>
+                  <td class="center">Tax</td>
+                  <td class="tax right-align">%9.5</td>
+                </tr>
+                <tr>
+                  <td class="center">Total</td>
+                  <td class="total right-align">$0.00</td>
+                </tr>
+              </tfoot>
             </table>
           </div>
 
@@ -149,25 +147,12 @@
                 </tr>
               </thead> -->
 
-              <tbody>
-                <tr>
-                  <td>Subtotal</td>
-                  <td class="right-align">$130.99</td>
-                </tr>
-                <tr>
-                  <td>Tax</td>
-                  <td class="right-align">$1,448.99</td>
-                </tr>
-                <tr>
-                  <td>Total</td>
-                  <td class="right-align">$0.00</td>
-                </tr>
-              </tbody>
+
             </table>
           </div>
 
           <div class=" col s12 row">
-            <form class="col s12">
+            <form id="userinfo" class="col s12">
               <!-- <div class="row"> -->
                 <div class="input-field col s12">
                   <i class="material-icons prefix pink-text">perm_identity</i>
@@ -190,7 +175,7 @@
                 </div>
               <!-- </div> -->
               <div class="center-align">
-                <a class="waves-effect waves-light btn pink">Place Order</a>
+                <button type="submit" id="placeorder" class="waves-effect waves-light btn pink">Place Order</button>
               </div>
             </form>
           </div>
