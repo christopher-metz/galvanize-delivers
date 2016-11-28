@@ -37,6 +37,7 @@
   };
 
   const cardClickHandler = function(event) {
+    event.preventDefault();
     const $target = $(event.target);
     const $food = $target.parent().prev().children(':first-child');
     const $cost = $target.parent().prev().children(':last-child');
