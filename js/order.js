@@ -56,8 +56,18 @@
     }
     else {
       for (let i = 0; i < 3; i++) {
-        if ($('input')[i].value === '') {
-          Materialize.toast('All address fields must be filled.', 4000);
+        if ($('input')[i].value === '' && i === 0) {
+          Materialize.toast('Please provide a name!', 4000);
+
+          return;
+        }
+        if ($('input')[i].value === '' && i === 1) {
+          Materialize.toast('Please provide a phone number!', 4000);
+
+          return;
+        }
+        if ($('input')[i].value === '' && i === 2) {
+          Materialize.toast('Please provide an address!', 4000);
 
           return;
         }

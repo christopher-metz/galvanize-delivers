@@ -12,19 +12,19 @@
   <script defer src="js/order.js"></script>
 
   <!--Import Google Icon Font-->
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/materialize.css">
   <link rel="stylesheet" href="css/order.css">
 
 </head>
   <body>
-    <nav class="blue darken-3" role="navigation">
+    <nav class="blue darken-3">
       <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">Galvanize Delivers</a>
         <ul class="right blue darken-4 hide-on-med-and-down">
           <li><a href="order.html">Order Delivery</a></li>
         </ul>
         <ul id="nav-mobile" class="side-nav">
-          <li><a href="order.html">Order Delivery</a></li>
+          <li><a href="index.html">Home Page</a></li>
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
@@ -33,12 +33,10 @@
     <main class="row">
       <div class="container">
         <div class="cards col s12 m7 row"><h5>Menu</h5>
-
           <div class="col s12 m12 l6">
-
             <div class="card">
               <div class="card-image">
-                <img src="img/burger.jpg">
+                <img src="img/burger.jpg" alt="A delicious burger!">
                 <span class="card-title"></span>
               </div>
               <div class="card-content">
@@ -49,14 +47,12 @@
                 <a class="pink-text" href="#">Add To Order</a>
               </div>
             </div>
-
           </div>
 
           <div class="col s12 m12 l6">
-
             <div class="card">
               <div class="card-image">
-                <img src="img/pizza.jpg">
+                <img src="img/pizza.jpg" alt="A delicious pizza!">
                 <span class="card-title"></span>
               </div>
               <div class="card-content">
@@ -67,14 +63,12 @@
                 <a class="pink-text" href="#">Add To Order</a>
               </div>
             </div>
-
           </div>
 
           <div class="col s12 m12 l6">
-
             <div class="card">
               <div class="card-image">
-                <img src="img/ribs.jpg">
+                <img src="img/ribs.jpg" alt="Some delicious ribs!">
                 <span class="card-title"></span>
               </div>
               <div class="card-content">
@@ -85,14 +79,12 @@
                 <a class="pink-text" href="#">Add To Order</a>
               </div>
             </div>
-
           </div>
 
           <div class="col s12 m12 l6">
-
             <div class="card">
               <div class="card-image">
-                <img src="img/ice_cream.jpg">
+                <img src="img/ice_cream.jpg" alt="A delicious ice cream sandwhich!">
                 <span class="card-title"></span>
               </div>
               <div class="card-content">
@@ -103,13 +95,10 @@
                 <a class="pink-text" href="#">Add To Order</a>
               </div>
             </div>
-
           </div>
-
         </div>
 
         <div class="col s12 m5 row"><h5>Order</h5>
-
           <div class="col s12">
             <table class="striped">
               <thead>
@@ -121,6 +110,7 @@
 
               <tbody>
               </tbody>
+
               <tfoot>
                 <tr>
                   <td class="center">Subtotal</td>
@@ -138,72 +128,57 @@
             </table>
           </div>
 
-          <div class="col s6 offset-s6">
-            <table>
-              <!-- <thead>
-                <tr>
-                    <th data-field="id">Item</th>
-                    <th data-field="price">Price</th>
-                </tr>
-              </thead> -->
-
-
-            </table>
-          </div>
-
           <div class=" col s12 row">
             <form id="userinfo" class="col s12">
-              <!-- <div class="row"> -->
-                <div class="input-field col s12">
-                  <i class="material-icons prefix pink-text">perm_identity</i>
-                  <input id="name" type="text">
-                  <label for="name">Name</label>
-                </div>
-              <!-- </div> -->
-              <!-- <div class="row"> -->
-                <div class="input-field col s12">
-                  <i class="material-icons prefix pink-text">phone</i>
-                  <input id="phone" type="text">
-                  <label for="phone">Phone Number</label>
-                </div>
-              <!-- </div> -->
-              <!-- <div class="row"> -->
-                <div class="input-field col s12">
-                  <i class="material-icons prefix pink-text">business</i>
-                  <input id="address" type="text">
-                  <label for="address">Address</label>
-                </div>
-              <!-- </div> -->
+              <div class="input-field col s12">
+                <i class="material-icons prefix pink-text">perm_identity</i>
+                <input id="name" type="text">
+                <label for="name">Name</label>
+              </div>
+
+              <div class="input-field col s12">
+                <i class="material-icons prefix pink-text">phone</i>
+                <input id="phone" type="text">
+                <label for="phone">Phone Number</label>
+              </div>
+
+              <div class="input-field col s12">
+                <i class="material-icons prefix pink-text">business</i>
+                <input id="address" type="text">
+                <label for="address">Address</label>
+              </div>
+
               <div class="center-align">
                 <button type="submit" id="placeorder" class="waves-effect waves-light btn pink">Place Order</button>
               </div>
             </form>
           </div>
-
         </div>
       </div>
     </main>
 
     <footer class="page-footer blue darken-3">
       <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Galvanize Delivers</h5>
-              <p class="grey-text text-lighten-4">Fine, Dining Delivered.</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
-                <li><a class="grey-text text-lighten-3" href="order.html">Order Delivery</a></li>
-              </ul>
-            </div>
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Galvanize Delivers</h5>
+            <p class="grey-text text-lighten-4">Fine, Dining Delivered.</p>
+          </div>
+
+          <div class="col l4 offset-l2 s12">
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="index.html">Home</a></li>
+              <li><a class="grey-text text-lighten-3" href="order.html">Order Delivery</a></li>
+            </ul>
           </div>
         </div>
-        <div class="footer-copyright blue darken-4">
-          <div class="container">
-          © 2016 Galvanize Delivers
-          </div>
+      </div>
+
+      <div class="footer-copyright blue darken-4">
+        <div class="container">
+        © 2016 Galvanize Delivers
         </div>
-      </footer>
+      </div>
+    </footer>
   </body>
 </html>
